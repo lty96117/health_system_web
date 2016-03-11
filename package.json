@@ -1,0 +1,12 @@
+{
+  "name": "health_system_web",
+  "version": "0.0.1",
+  "description": "Health System Web Server",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^0.26.5",
+    "koa": "^1.2.0",
+    "koa-ejs": "^3.0.0",
+    "koa-static-cache": "^3.1.5"
+  }
+}
