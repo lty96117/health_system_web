@@ -10,7 +10,7 @@ const app = koa();
 
 render(app, {
   root: path.join(__dirname, 'page'),
-  layout: false,
+  layout: 'template',
   viewExt: 'html',
   cache: false,
   debug: true
