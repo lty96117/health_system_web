@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gentallela Alela! | </title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/icheck/flat/green.css" rel="stylesheet">
+
+
+    <script src="js/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        </head>
+<body class="nav-md">
+
+
+  
+<div class="container body">
+
+
+        <div class="main_container">
+        <div class="title_right">
+                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                <div class="input-group">
+                               
+                                    <input type="text" class="form-control" placeholder="阿司匹林">
+                                    <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="row">
+            <!-- top navigation -->
+            <!-- /top navigation -->
+
+            <!-- page content -->
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2 >药物名称：阿司匹林肠溶片</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a href="#"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Settings 1</a>
+                                                </li>
+                                                <li><a href="#">Settings 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+
+                                    <div class="col-md-7 col-sm-7 col-xs-7">
+                                        <div class="product-image">
+                                            <img src="images/prod1.jpg" alt="..." />
+                                        </div>
+                                     <div class="product_gallery">
+                                            <a>
+                                                <img src="images/prod2.jpg" alt="..." />
+                                            </a>
+                                            <a>
+                                                <img src="images/prod3.jpg" alt="..." />
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-5 col-sm-5 col-xs-12" style="border:0px solid #e5e5e5;">
+												    <div style="color:gray;font-size: 16px">【类型】    <%=drug.cla%> </div>
+													<div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
+                                       <div style="color:gray;font-size: 16px">【主要适用症】     <%=drug.suit%> </div>
+													<div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
+                                       <div style="color:gray;font-size: 16px">【规格】    <%=drug.size%> </div>
+                                    	<div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
+													<div style="color:gray ;font-size: 16px">【批准文号】    <%=drug.number%> </div>
+                                    	<div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
+													
+                                   
+
+                                        <div class="">
+                                            <div class="product_price">
+                                                <div class="price" style="font-size:30px">参考价格：<%=drug.price1%> - <%=drug.price2%>元</div>
+                                                <br>
+                                            </div>
+                                        </div>
+
+                                        <div class="">
+                                            <button type="button" class="btn btn-default btn-lg" >点击咨询</button>
+                    
+                                        </div>
+
+                                        <div class="product_social">
+                                            <ul class="list-inline">
+                                                <li><a href="#"><i class="fa fa-envelope-square"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+												<div style="color:#cccccc">*请仔细阅读药品说明书并按说明或在医师指导下使用 </div>
+													<div style="border-top:1px dashed #cccccc;height: 1px;overflow:hidden"></div>
+												<div style="color:#cccccc">*数据来源：<a> ####</a> </div>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+
+                                        <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                                            <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                                                <li role="presentation" class="active"><a href="#tab_content1" id="tab" role="tab" data-toggle="tab" aria-expanded="true">功能主治</a>
+                                                </li>
+                                                <li role="presentation" class=""><a href="#tab_content2" role="tab" id="tab2" data-toggle="tab" aria-expanded="false">主要用药禁忌</a>
+                                                </li>
+                                                <li role="presentation" class=""><a href="#tab_content3" role="tab" id="tab3" data-toggle="tab"  aria-expanded="false">不良反应</a>
+                                                </li>
+                                                  <li role="presentation" class=""><a href="#tab_content4" id="tab4" role="tab" data-toggle="tab" aria-expanded="true">用量用法 </a>
+                                                </li>
+                                                  <li role="presentation" class=""><a href="#tab_content5" id="tab5" role="tab" data-toggle="tab" aria-expanded="true">同类药品 </a>
+                                                </li>
+                                            </ul>
+                                            <div id="myTabContent" class="tab-content">
+                                                <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="tab">
+                                                    <div style="font-size:15px"> <%=drug.function%></div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="tab2">
+ 																	<div style="font-size:15px"><%=drug.ban%></div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="tab3">
+																		<div style="font-size:15px"><%=drug.infection%></div>
+																		</div>
+                                                 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="tab4">
+																		<div style="font-size:15px"><%=drug.a%></div>
+                                                </div>
+                                                <div role="tabpanel" class="tab-pane fade" id="tab_content5" aria-labelledby="tab5">
+																		<div style="font-size:15px;color:blue;"><a href="#"><%=drug.similar%></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                             
+                            
+                        
+                    
+          </div>
+          </div>
+	</div>
+                <!-- footer content -->
+                <footer>
+                    <div class="">
+                        <p class="pull-right">
+                            <span class="lead"> <i class="fa fa-paw"></i> 疾病诊疗服务系统 </span>
+                        </p>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content -->
+
+            </div>
+            <!-- /page content -->
+        </div>
+
+    </div>
+
+</body>
+
+</html>

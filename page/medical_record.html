@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom styling plus plugins -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/icheck/flat/green.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/progressbar/bootstrap-progressbar-3.3.0.css">
+    <script src="js/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="../assets/js/ie8-responsive-file-warning.js"></script>
+        <![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+</head>
+
+
+<body class="nav-md">
+
+    <div class="container body">
+
+
+        <div class="main_container">
+        
+                    <div class="row">
+                    <div class="">
+              
+                            <div class="col-md-9 col-sm-9	 col-xs-12" style="text-align: center;margin-left: 120px;">
+                            <div class="x_panel">
+                                <div class="x_title">
+
+                                                                    <h2 >医疗档案</h2>
+                                    
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Settings 1</a>
+                                                </li>
+                                                <li><a href="#">Settings 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+
+                                    <!-- start accordion -->
+                                    <div class="accordion" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel">
+                                            <a class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <h4 class="panel-title"><b>自动更新</b></h4>
+                                            </a>
+															<div style="" aria-expanded="true" id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                <br> <br>
+               													                                                <p class="lead" align="center" style="font-size:30px;"><b>自动更新</b></p>
+                                                <br>     <br>
+                                                <p style="font-size: 12px;	"> 我们将通过您的身份证号自动 更新您的医疗档案</p>       
+                                                <br>
+                                                <div align="center" style="font-size: 16px;">       
+                                       <form name="input" action="#" method="post" >
+                                      请输入您的身份证号码:
+															<input type="text" name="user" />
+														<div style="font-size: 12px;color: #cccccc;margin-right:240px;"><br /><input type="checkbox" name="yes" />我已阅读同意<a href="#" style="color: blue;">服务协议</a> </div>
+														<br><br>													
+													<button type="button" class="btn btn-danger">确认更新</button>
+													</form>
+													</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <a class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <h4 class="panel-title"><b>手动填写</b></h4>
+                                            </a>
+                                            <div style="height: 0px;" aria-expanded="false" id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                <div style="text-align: center;">
+                                                 <div id="wizard" class="form_wizard wizard_horizontal">
+                                        <ul class="wizard_steps anchor">
+                                            <li>
+                                                <a rel="1" isdone="1" class="selected" href="#step-1">
+                                                    <span class="step_no">1</span>
+                                                    <span class="step_descr">
+                                           步骤一<br>
+                                            <small>个人基本信息</small>
+                                        </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a rel="2" isdone="0" class="disabled" href="#step-2">
+                                                    <span class="step_no">2</span>
+                                                    <span class="step_descr">
+                                             步骤二<br>
+                                            <small>病史填写</small>
+                                        </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a rel="3" isdone="0" class="disabled" href="#step-3">
+                                                    <span class="step_no">3</span>
+                                                    <span class="step_descr">
+                                          步骤三<br>
+                                            <small>完成</small>
+                                        </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        
+                                        
+                                        
+                                        
+
+                                    <div class="stepContainer">
+                                    <div style="display: block;" class="wizard_content" id="step-1">
+                                            <form class="form-horizontal form-label-left">
+
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">姓名<span class="required">*</span>
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="first-name" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">出生日期
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">身份证号<span class="required">*</span></label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="middle-name" class="form-control col-md-7 col-xs-12" name="middle-name" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">性别</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="male" type="radio"> &nbsp; 男 &nbsp;
+                                                            </label>
+                                                            <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="female" checked="" type="radio"> 女
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">居住住址
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                                    </div>
+                                                </div>
+                                                                        <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">手机号码 
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                                    </div>
+                                                </div>
+																                   <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">邮箱 
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div style="display: none;" class="wizard_content" id="step-2">
+                                               <form class="form-horizontal form-label-left">
+                                            <p>
+ 																	               <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">心脏病史</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="male" type="radio"> &nbsp; 有 &nbsp;
+                                                            </label>
+                                                            <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="female" checked="" type="radio"> 无
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 																	               <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">高血压病史</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="male" type="radio"> &nbsp; 有 &nbsp;
+                                                            </label>
+                                                            <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="female" checked="" type="radio"> 无
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 																	               <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">糖尿病史</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="male" type="radio"> &nbsp; 有 &nbsp;
+                                                            </label>
+                                                            <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="female" checked="" type="radio"> 无
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 																	               <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">脑卒病史</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="male" type="radio"> &nbsp; 有 &nbsp;
+                                                            </label>
+                                                            <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="female" checked="" type="radio"> 无
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 																	               <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">消化系统病史</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="male" type="radio"> &nbsp; 有 &nbsp;
+                                                            </label>
+                                                            <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="female" checked="" type="radio"> 无
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        							    <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">传染病史</label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <div id="gender" class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="male" type="radio"> &nbsp; 有 &nbsp;
+                                                            </label>
+                                                            <label class="btn btn-primary active" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                                                                <input name="gender" value="female" checked="" type="radio"> 无
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name"> 其他病史
+                                                    </label>
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                                                                                                <div class="form-group">
+                                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name"> 患病时间
+                                                    </label>
+                                                    
+                                                                       </form>	
+                                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                                        <input id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12" type="text">
+                                                    </div>
+                                                </div>
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div><div style="display: none;" class="wizard_content" id="step-3">
+                                            <h2 class="StepTitle">这里会写些必要说明</h2>
+                                            
+																						<div style="font-size: 12px;color: #cccccc;margin-right:240px;"><br /><input type="checkbox" name="yes" />我已阅读同意<a href="#" style="color: blue;">服务协议</a> </div>
+														<br><br>													
+                                            
+                                        </div>
+                                        </div>
+                               
+                                        </div>
+                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of accordion -->
+
+
+                                </div>
+                            </div>
+                        
+                        </div>
+                        </div>
+                        </div>
+                <footer>	
+                    <div class="">
+                        <p class="pull-right">
+                            <span class="lead"> <i class="fa fa-paw"></i> 疾病诊疗服务系统 </span>
+                        </p>
+                    </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                        </div>
+                        </div>
+                        </div>
+
+    <script type="text/javascript" src="js/wizard/jquery.smartWizard.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Smart Wizard 	
+            $('#wizard').smartWizard();
+
+            function onFinishCallback() {
+                $('#wizard').smartWizard('showMessage', 'Finish Clicked');
+                //alert('Finish Clicked');
+            }
+        });
+
+        $(document).ready(function () {
+            // Smart Wizard	
+            $('#wizard_verticle').smartWizard({
+                transitionEffect: 'slide'
+            });
+
+        });
+    </script>
+                        </body>
+
+                        </html>

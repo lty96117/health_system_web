@@ -1,0 +1,64 @@
+<div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="x_panel">
+          <div class="x_title">
+                                    <h2><i class="fa fa-bars"></i>疾病基本信息 <small>Float left</small></h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">Settings 1</a>
+                                                </li>
+                                                <li><a href="#">Settings 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                <div class="clearfix"></div>
+        </div>
+         <div class="x_content">
+
+                        <div class="col-xs-3">
+                                        <!-- required for floating -->
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs tabs-left">
+                                        <%for(i=0;i< diseases.length;i++){%>
+                                        <%if(i==0){%>
+                                         <li class="active"><a id="<%=diseases[i].id%>" href="#<%=diseases[i].tag%>" data-toggle="tab"><%=diseases[i].name%></a>
+                                            </li>
+                                        <%}else{%>
+                                             <li><a id="<%=diseases[i].id%>" href="#<%=diseases[i].tag%>" data-toggle="tab"><%=diseases[i].name%></a>
+                                            </li>
+                                        <%}%>
+                                        <%}%>
+                                        </ul>
+                    </div>
+
+                     <div class="col-xs-9">
+                                        <!-- Tab panes -->
+                            <div class="tab-content">
+                                        <%for(i=0;i< diseases.length;i++){%>
+                                        <%if(i==0){%>
+                             <div class="tab-pane active" role="tabpanel<%=i+1%>"  id="<%=diseases[i].tag%>" aria-labelledby="<%diseases[i].id%>">
+                                                <p class="lead"><%=diseases[i].name%></p>
+                                                <!-- <<textarea name="text" cols="30px" rows="20px" wrap="hard"><%=diseases[i].text%></textarea> -->
+                                                 <p style="font-size: 24px;"><%=diseases[i].text%></p> 
+                             </div>
+                                        <%}else{%>
+                            <div class="tab-pane" role="tabpanel<%=i+1%>"  id="<%=diseases[i].tag%>" aria-labelledby="<%=diseases[i].id%>">
+                                                <p class="lead"><%=diseases[i].name%></p>
+                                                <p style="font-size: 24px;"><%=diseases[i].text%></p>
+                             </div>
+                                        <%}%>
+                                        <%}%>
+                                           
+                                            
+
+                                 
+                     </div>
+          </div>
+      </div>
+  </div>

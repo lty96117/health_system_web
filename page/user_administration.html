@@ -1,0 +1,190 @@
+<div class="paga-title">
+    <div class="title_left">
+        <h3 style='font-family: "Helvetica Neue", Roboto, Arial, 微软雅黑'><%=page_title%></h3>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-6">
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="请输入用户ID" value="ID_JING8756985">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary">查询</button>
+                            </span>
+                    </input>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+<div class="clearfix"></div>
+
+<div class="col-md-6 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>用户信息 <small></small></h2>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <br>
+            <form class="form-horizontal form-label-left">
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">ID </label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" disabled="disabled" value="ID_JING8756985"/>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">姓名</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" placeholder="请输入姓名" value="<%=user.name%>">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-3 col-xs-12 control-label">性别</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+
+
+                        <div class="radio">
+                            <label>
+                                <input type="radio" checked="checked" value="男"
+                                       id="optionsRadios1" name="optionsRadios"/>男
+                            </label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>
+                                <input type="radio" value="女"
+                                       id="optionsRadios2" name="optionsRadios"> 女
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">出生日期</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" placeholder="请输入出生日期" value="1985-02-02">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">身份证号</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" placeholder="请输入身份证号" value="130154198502024525" maxlength="18">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">居住地址</span>
+                    </label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <textarea class="form-control" rows="3" placeholder="请输入居住地址" style="margin: 0px -1px 0px 0px;">黑龙江省 哈尔滨市 南岗区 幸福小区</textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-3 col-xs-12 control-label">不良生活习惯</label>
+
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="" checked="checked">抽烟
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="">酗酒
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="">吸毒
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="">熬夜
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">Select</label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <select class="form-control">
+                            <option>Choose option</option>
+                            <option>Option one</option>
+                            <option>Option two</option>
+                            <option>Option three</option>
+                            <option>Option four</option>
+                        </select>
+                    </div>
+                </div>
+                -->
+
+
+
+                <div class="form-group">
+                    <label class="col-md-3 col-sm-3 col-xs-12 control-label">过往病史</label>
+
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">心脏病病史
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="">糖尿病病史
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="" checked="checked">消化系统疾病病史
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="">脑卒中病史
+                            </label>
+                            <br />
+                            <label>
+                                <input type="checkbox" value="">高血压病史
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">其他病史</span>
+                    </label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <textarea class="form-control" rows="3" placeholder="请输入病史" style="margin: 0px -1px 0px 0px;">2004-8 扁桃体发炎 切除扁桃体</textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-md-3 col-sm-3 col-xs-12">家族遗传病例</span>
+                    </label>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <textarea class="form-control" rows="3" placeholder="请输入家族遗传病例" style="margin: 0px -1px 0px 0px;">无</textarea>
+                    </div>
+                </div>
+
+                <div class="ln_solid"></div>
+                <div class="form-group">
+                    <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
+                        <button type="submit" class="btn btn-primary">取消</button>
+                        <button type="submit" class="btn btn-success">提交</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

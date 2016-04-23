@@ -1,0 +1,64 @@
+<div class="paga-title">
+    <div class="title_left">
+        <h3 style='font-family: "Helvetica Neue", Roboto, Arial, 微软雅黑'><%=page_title%></h3>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2><i class="fa fa-bars"></i> 您在 <%=user_info.location%> 附近 </h2>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <div class="col-xs-3">
+
+                <ul class="nav nav-tabs tabs-left">
+                    <% for (i=0; i < hospitals.length; i++) {%>
+                        <% if (i==0) { %>
+                            <li class="active">
+                                <a href="#<%=hospitals[i].tag%>" data-toggle="tab"><%=hospitals[i].name%><% if(hospitals[i].old=="1"){ %>(去过)<% } %></a>
+                            </li>
+                        <% }else { %>
+                            <li>
+                                <a href="#<%=hospitals[i].tag%>" data-toggle="tab"><%=hospitals[i].name%><% if(hospitals[i].old=="1"){ %>(去过)<% } %></a>
+                            </li>
+                        <% } %>
+                    <% } %>
+                </ul>
+            </div>
+
+            <div class="col-xs-9">
+
+                <div class="tab-content">
+                    <% for (i=0; i< hospitals.length; i++) { %>
+                        <% if (i==0) { %>
+                            <div class="tab-pane active" id="<%=hospitals[i].tag%>">
+                                <img class="col-xs-9" src="<%=hospitals[i].routes.img%>" />
+                                <div class="col-xs-3">
+                                    <% for (j=0; j< hospitals[i].description.length; j++) { %>
+                                    <p><%=hospitals[i].description[j]%></p>
+                                    <% } %>
+                                </div>
+
+                            </div>
+                        <% }else {%>
+                            <div class="tab-pane" id="<%=hospitals[i].tag%>">
+                                <img class="col-xs-9" src="<%=hospitals[i].routes.img%>" />
+                                <div class="col-xs-3">
+                                    <% for (j=0; j< hospitals[i].description.length; j++) { %>
+                                    <p><%=hospitals[i].description[j]%></p>
+                                    <% } %>
+                                </div>
+                            </div>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>医疗数据上传</h2>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="x_content">
+
+                <p>将文件拖拽至此或点击浏览选择来上传带有医疗信息数据的xls文件</p>
+                <form action="choices/form_upload.html" class="dropzone dz-clickable" style="border: 1px solid #e5e5e5; height: 300px;"  onclick="upload();">
+                    <div class="dz-default dz-message">
+                        <span>将文件拖拽至此</span>
+                    </div>
+                    <input type="file" value="upload" style="display: none;" id="file" accept="application/vnd.ms-excel" />
+                </form>
+                <script>
+                    function upload() {
+                        document.getElementById("file").click();
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+</div>
